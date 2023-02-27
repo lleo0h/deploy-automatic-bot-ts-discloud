@@ -1,0 +1,9 @@
+{
+    "main": "index.js",
+    "scripts": {
+        "start": "npx tsc index.ts && node ."
+    },
+    "dependencies": {
+        "typescript": "^4.9.5"
+    }
+}
