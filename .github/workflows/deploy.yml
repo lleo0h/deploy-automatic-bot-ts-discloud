@@ -18,10 +18,13 @@ jobs:
       - name: Gerate dist
         run: npx tsc
       
-      - name: Deleting sources and dependecies
-        run: rm -rf src node_modules
+      # - name: Deleting sources and dependecies
+      #   run: rm -rf src node_modules
 
       - name: Zipping all files
         uses: montudor/action-zip@v1
         with: 
-          args: zip -qq -r toatrica.zip dist package.json package-lock.json
+          args: zip -qq -r dist.zip dist package.json package-lock.json
+
+      - name: Upload to Host
+        run: npm run start
