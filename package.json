@@ -1,12 +1,12 @@
 {
-    "main": "src/index.ts",
+    "main": "src/main.ts",
     "scripts": {
-        "start": "node .github/upload.js"
+        "deploy": "node .github/deploy.js"
     },
     "dependencies": {
-        "discloud.app": "^0.6.3",
         "dotenv": "^16.0.3",
         "oceanic.js": "^1.5.0",
+        "tsx": "^3.12.3",
         "typescript": "^4.9.5"
     }
 }
