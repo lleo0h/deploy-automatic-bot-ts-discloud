@@ -27,4 +27,8 @@ jobs:
           args: zip -qq -r dist.zip dist package.json package-lock.json
 
       - name: Upload to host
+        env: 
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          BOT_ID: ${{ secrets.BOT_ID }}
+          DISCLOUD_TOKEN: ${{ secrets.DISCLOUD_TOKEN }}
         run: npm run deploy

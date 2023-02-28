@@ -5,3 +5,5 @@ declare namespace NodeJS {
         DISCLOUD_TOKEN: string;
     }
 }
+
+//Create .env file in raiz project and add environment github secrets.
