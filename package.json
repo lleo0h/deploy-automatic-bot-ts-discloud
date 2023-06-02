@@ -1,8 +1,5 @@
 {
     "main": "src/main.ts",
-    "scripts": {
-        "deploy": "node .github/deploy.js"
-    },
     "dependencies": {
         "dotenv": "^16.0.3",
         "oceanic.js": "^1.5.0",

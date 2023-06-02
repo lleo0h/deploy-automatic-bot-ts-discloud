@@ -31,4 +31,4 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           BOT_ID: ${{ secrets.BOT_ID }}
           DISCLOUD_TOKEN: ${{ secrets.DISCLOUD_TOKEN }}
-        run: npm run deploy
+        run: 'curl -X "PUT" https://api.discloud.app/v2/app/$BOT_ID/commit -H "api-token: $DISCLOUD_TOKEN" -H "Content-Type: multipart/form-data" -F "data=@dist.zip"'
